@@ -1,0 +1,6 @@
+model_operating <- glm(formula = num_disasters ~ has_data_center, family = poisson(), data=df_operating)
+model_cancelled <- glm(formula =num_disasters ~ has_data_center, family = poisson(), data=df_cancelled)
+model_proposed <- glm(formula =num_disasters ~ has_data_center, family = poisson(), data=df_proposed)
+model_approved_permitted <- glm(formula =num_disasters ~ has_data_center, family = poisson(), data=df_approved_permited)
+model_suspended <- glm(formula =num_disasters ~ has_data_center, family = poisson(), data=df_suspended)
+model_unknown <- glm(formula =num_disasters ~ has_data_center, family = poisson(), data=df_unknown)
